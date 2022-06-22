@@ -30,7 +30,7 @@ export default {
   methods: {
     listarFavoritos() {
       axios
-        .get("favourites")
+        .get("favourites?order=Desc")
         .then((respuesta) => {
           this.gatosArray = respuesta.data;
         })
